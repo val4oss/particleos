@@ -1,0 +1,9 @@
+#!/bin/bash
+# SPDX-License-Identifier: LGPL-2.1-or-later
+set -e
+
+# Preserve /var/lib/ca-certificates for the final image
+if [[ -d "$BUILDROOT/var/lib/ca-certificates" ]]; then
+    mkdir -p "$BUILDROOT/usr/share/factory/var/lib"
+    cp --archive --no-target-directory "$BUILDROOT/var/lib/ca-certificates" "$BUILDROOT/usr/share/factory/var/lib/ca-certificates"
+fi

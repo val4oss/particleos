@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+[repo-oss]
+name=openSUSE-Tumbleweed-Oss
+enabled=1
+autorefresh=1
+baseurl=https://download.opensuse.org/tumbleweed/repo/oss/
+type=rpm-md
+keeppackages=0

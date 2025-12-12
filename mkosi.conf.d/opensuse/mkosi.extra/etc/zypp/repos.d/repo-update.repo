@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+[repo-update]
+name=openSUSE-Tumbleweed-Update
+enabled=1
+autorefresh=1
+baseurl=https://download.opensuse.org/update/tumbleweed/
+type=rpm-md
+keeppackages=0
+gpgcheck=1
